@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 
 import java.io.IOException;
 
+import java.sql.*;
 
 public class Appointments {
 	
@@ -114,5 +115,6 @@ public class Appointments {
         stage.show();
 		
 	}
+	
 
 }
