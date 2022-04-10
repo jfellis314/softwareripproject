@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Tech_CheckedINAppoint">
+   <children>
+      <Separator layoutY="50.0" prefWidth="1549.0" />
+      <Button fx:id="btnLogout" layoutX="1420.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLogoutClicked" prefHeight="30.0" prefWidth="100.0" text="Logout" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHome" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnHomeClicked" prefHeight="30.0" prefWidth="100.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnUserInfo" layoutX="125.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnUserInfoClicked" prefHeight="30.0" prefWidth="100.0" text="User Info" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="759.0" layoutY="53.0" text="Checked In Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="180.0" prefWidth="1549.0" />
+      <Separator layoutY="748.0" prefWidth="1549.0" />
+      <Label layoutX="1180.0" layoutY="84.0" text="Search:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1243.0" layoutY="80.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label layoutX="815.0" layoutY="760.0" text="2 / 2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="158.0" text="Patient" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" layoutY="158.0" text="Price" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1030.0" layoutY="158.0" text="Radiologist" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrior" layoutX="748.0" layoutY="755.0" mnemonicParsing="false" onAction="#btnPriorClicked" prefHeight="30.0" prefWidth="55.0" text="&lt;--" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="625.0" layoutY="760.0" text="All Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1280.0" layoutY="158.0" text="Technician" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="780.0" layoutY="158.0" text="Date / Time" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="158.0" text="Modality" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView layoutY="157.0" prefHeight="590.0" prefWidth="1550.0">
+        <columns>
+          <TableColumn prefWidth="280.0" text="Patient" />
+          <TableColumn prefWidth="250.0" text="Modality" />
+            <TableColumn prefWidth="250.0" text="Price" />
+            <TableColumn prefWidth="250.0" text="Date / Time" />
+            <TableColumn prefWidth="250.0" text="Radiologist" />
+            <TableColumn prefWidth="270.0" text="Technician" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
