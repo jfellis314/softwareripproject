@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #34698E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.updateToday">
+   <children>
+      <Button fx:id="btnCancel" layoutX="338.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnCancelClicked" style="-fx-background-color: #fffefd;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="190.0" layoutY="5.0" text="Update Status / Priority" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Separator layoutY="25.0" prefHeight="0.0" prefWidth="500.0" style="-fx-background-color: #fffefd;" />
+      <Separator layoutY="260.0" prefHeight="0.0" prefWidth="500.0" style="-fx-background-color: #fffefd;" />
+      <Button fx:id="btnSubmit" layoutX="122.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnSubmitClicked" style="-fx-background-color: #fffefd;" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="10.0" layoutY="85.0" text="Patient :" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="185.0" text="Priority :" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="135.0" text="Status :" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text1" layoutX="150.0" layoutY="82.0" prefWidth="215.0" />
+      <TextField fx:id="text2" layoutX="150.0" layoutY="132.0" prefWidth="215.0" />
+      <TextField fx:id="text3" layoutX="150.0" layoutY="182.0" prefWidth="215.0" />
+   </children>
+</AnchorPane>

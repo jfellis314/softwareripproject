@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1550.0" style="-fx-background-color: #34698E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Patients">
+   <children>
+      <Separator layoutY="50.0" prefWidth="1549.0" style="-fx-background-color: #fffefd;" />
+      <Button fx:id="btnLogout" layoutX="1420.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLogoutClicked" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fffefd;" text="Logout" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHome" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnHomeClicked" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fffefd;" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnUserInfo" layoutX="125.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnUserInfoClicked" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fffefd;" text="User Info" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReferrals" layoutX="235.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnReferralsClicked" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fffefd;" text="Referrals" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAppointments" layoutX="345.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAppointmentsClicked" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #fffefd;" text="Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOrders" layoutX="475.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnOrdersClicked" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fffefd;" text="Orders" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="741.0" layoutY="52.0" text="Patients" textAlignment="CENTER" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="180.0" prefWidth="1549.0" />
+      <Separator layoutY="748.0" prefWidth="1549.0" style="-fx-background-color: #fffefd;" />
+      <Label layoutX="1190.0" layoutY="84.0" text="Search:" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNew" layoutX="1420.0" layoutY="79.0" mnemonicParsing="false" onAction="#btnNewClicked" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #fffefd;" text="New" textAlignment="CENTER" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="1243.0" layoutY="80.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label layoutX="760.0" layoutY="760.0" text="4 / 8" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNext" layoutX="795.0" layoutY="755.0" mnemonicParsing="false" onAction="#btnNextClicked" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #fffefd;" text="--&gt;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="855.0" layoutY="762.0" text="Orders" textAlignment="CENTER" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="158.0" text="Patient ID" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="158.0" text="Date of Birth" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrior" layoutX="700.0" layoutY="755.0" mnemonicParsing="false" onAction="#btnPriorClicked" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #fffefd;" text="&lt;--" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="605.0" layoutY="760.0" text="Patient Alerts" textAlignment="CENTER" textFill="#fffefd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1080.0" layoutY="158.0" text="First Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="158.0" text="Last Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablePatient" layoutY="150.0" prefHeight="600.0" prefWidth="1550.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="192.0" text="Patient ID" />
+          <TableColumn fx:id="colFirst" prefWidth="192.0" text="First Name" />
+            <TableColumn fx:id="colLast" prefWidth="192.0" text="Last Name" />
+            <TableColumn fx:id="colDOB" prefWidth="192.0" text="Date of Birth" />
+            <TableColumn fx:id="colSex" prefWidth="192.0" text="Sex" />
+            <TableColumn fx:id="colRace" prefWidth="192.0" text="Race" />
+            <TableColumn fx:id="colEthnicity" prefWidth="192.0" text="Ethnicity" />
+            <TableColumn fx:id="colInsurance" prefWidth="192.0" text="Insurance Company" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnRefresh" layoutX="1475.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnRefreshClicked" style="-fx-background-color: #fffefd;" text="Refresh">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
